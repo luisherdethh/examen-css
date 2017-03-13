@@ -1,0 +1,247 @@
+
+
+/* Exercici 1 - GENERAL */
+/*FUETES*/
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+/*border-box*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*"body"*/
+body{
+	font-size: 12px;
+	/*color: #ecf0f1;*/
+    color: black;
+	font-family: 'Quicksand', sans-serif;
+}
+/* Exercici 2 - LOGO */
+
+h1{
+	font-family: 'Lobster', cursive;
+	color: #9b59b6;
+	text-shadow: #bdc3c7 2px 2px;
+	text-align: center;
+	text-decoration: overline;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 5em;
+	letter-spacing: 0.5em;
+
+}
+
+/* LAYOUT	RESPONSIVE */
+     @media (min-width:680px) {
+            .col-1{width: 8.33%;}
+            .col-2{width: 16.66%;}
+            .col-3{width: 25%;}
+            .col-4{width: 33.33%;}
+            .col-5{width: 41.66%;}
+            .col-6{width: 50%;}
+            .col-7{width: 58.33%;}
+            .col-8{width: 66.66%;}
+            .col-9{width: 75%;}
+            .col-10{width: 83.33%;}
+            .col-11{width: 91.66%;}
+            .col-12{width: 100%;}
+            [class*="col-"]{
+                float: left;
+                /*display: block;*/
+            }
+        }
+        @media (max-width: 679px){
+        	[class*="col-"]{
+        		width: 100%;
+                float: left;
+        	}	
+        }
+/* Exercici 4 - MENÚ */
+nav{
+	background: #9b59b6;
+}
+
+nav li:first-child{
+    margin-left: 30px;
+}
+
+nav li{
+    display: inline;
+    padding: 10px;
+    font-size: 1.5em;
+}
+nav li a{
+    color: #ecf0f1;
+    text-decoration: none;
+    /*padding-left:5px;
+	padding-right:5px;*/
+	height: 40px;
+	line-height:40px;
+
+}
+nav li a:hover{
+    background-color: #8e44ad;
+    border-radius: 1em;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+}
+nav li a:link{
+    cursor: pointer; 
+    cursor: hand;
+}
+
+/* Exercici 5 - SIDEBAR */
+aside{
+    background:#8e44ad;
+    padding: 30px;
+}
+aside section{
+    background: #ecf0f1;
+    border: 5px dashed #7f8c8d;
+    margin-bottom: 20px;
+}
+/*COSAS QUE FALTAN*/
+aside section ul{
+    padding: 30px;
+    list-style-type: circle;
+}
+/* FIN */
+
+/* Exercici 6 - CONTAINER */
+#container{
+    background-image: url(https://www.colourbox.com/preview/2915337-violet-glass-frame.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 7% 12%;
+    background-position: center center;
+}
+
+p{
+    color: black;
+    text-indent: 50px;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+p:nth-child(3){
+    color:red;
+}
+
+p:first-letter{
+    font-size: 2em;
+    color:#8e44ad;
+}
+
+/* Exercici 7 - COLOR BOXES */
+
+#cards{
+    position: relative;
+    background-color: #e74c3c;
+    height: 400px;
+    z-index: 2;
+}
+
+.card.yellow{
+	position:absolute;
+    background-color: #f1c40f;
+    height: 200px;
+    width: 300px;
+    z-index: 6;
+}
+.card.green{
+    position: absolute;
+    background-color: #40d47e;
+    height: 200px;
+    width: 300px;
+    z-index: 5;
+    left: 100px;
+    top: 30px;
+}
+.card.blue{
+    position: relative;
+    background-color: #3498db;
+    height: 200px;
+    width: 300px;
+    z-index: 4;
+    top: 60px;
+    left: 200px;
+}
+
+
+/* Exercici 8 - TABLE */
+
+table, th, td {
+    border: 1px solid #ddd;
+    border-spacing: 0px;
+    color: #666;
+    /*agregado*/
+    text-align: left;
+     /*table-layout: fixed;*/
+}
+
+td{
+    padding:8px;
+}
+th{
+    background-color:#9b59b6;
+    color:white;
+    padding: 12px;
+}
+
+tr:nth-child(odd) {
+    background-color:#f2f2f2;
+}
+tr:nth-child(even) {
+    background-color:white;
+}
+
+tr:hover {
+    background: #ddd !important;
+}
+
+/* AGREGADO*/
+table{
+    width:100%;
+}
+table th:nth-child{
+    width:50%;
+}
+
+table th:nth-child(2){
+    width:30%;
+}
+
+table th:nth-child(3){
+    width:20%;
+}
+/* FIN */
+
+
+/* Exercici 9 - EMAIL ME */
+
+#emailme img{
+    width: 50px;
+    float: right;
+    right: 6%;
+    position: fixed;
+    bottom: 5%;
+    opacity: 0.25;
+    transition: all 2s ease-in-out;
+}
+
+#emailme img:hover{
+    opacity: 1;
+    /*width: 100px;*/
+    transform: rotate(360deg) scale(3,3);
+}
+
+/* Exercici 3 - RESPONSIVE */
+
+
+/* OBSERVACIÓN */
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
